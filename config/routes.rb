@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :programming_languages
   resources :users
 
   root 'users#index'
