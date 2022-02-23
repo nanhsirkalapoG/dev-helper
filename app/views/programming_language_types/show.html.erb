@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @programming_language_type.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @programming_language_type.description %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @programming_language_type.notes %>
+</p>
+
+<%= link_to 'Edit', edit_programming_language_type_path(@programming_language_type) %> |
+<%= link_to 'Back', programming_language_types_path %>

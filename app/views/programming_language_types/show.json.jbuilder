@@ -1,0 +1,1 @@
+json.partial! "programming_language_types/programming_language_type", programming_language_type: @programming_language_type
