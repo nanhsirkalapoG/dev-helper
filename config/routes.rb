@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tool_types
   resources :programming_language_types
   resources :programming_languages
   resources :users
