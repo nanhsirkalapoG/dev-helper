@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :databases
   resources :database_types
   resources :version_controls
   resources :ides
