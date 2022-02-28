@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @version_control.name %>
+</p>
+
+<p>
+  <strong>VcsType:</strong>
+  <%= @version_control.vcs_type %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @version_control.notes %>
+</p>
+
+<%= link_to 'Edit', edit_version_control_path(@version_control) %> |
+<%= link_to 'Back', version_controls_path %>

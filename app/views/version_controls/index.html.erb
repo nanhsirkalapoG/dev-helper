@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Version Controls</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>VcsType</th>
+      <th>Notes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @version_controls.each do |version_control| %>
+      <tr>
+        <td><%= version_control.name %></td>
+        <td><%= version_control.vcs_type %></td>
+        <td><%= version_control.notes %></td>
+        <td><%= link_to 'Show', version_control %></td>
+        <td><%= link_to 'Edit', edit_version_control_path(version_control) %></td>
+        <td><%= link_to 'Destroy', version_control, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Version Control', new_version_control_path %>
