@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @database_type.name %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @database_type.notes %>
+</p>
+
+<%= link_to 'Edit', edit_database_type_path(@database_type) %> |
+<%= link_to 'Back', database_types_path %>
