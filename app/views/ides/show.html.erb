@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @ide.name %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @ide.notes %>
+</p>
+
+<p>
+  <strong>Open source:</strong>
+  <%= @ide.open_source %>
+</p>
+
+<%= link_to 'Edit', edit_ide_path(@ide) %> |
+<%= link_to 'Back', ides_path %>
